@@ -18,6 +18,17 @@
                 --white: #FFFFFF;
                 --powder: #F7F7F6;
                 --strawberry: #FC3D39;
+
+                --frost: #EDF6F9;
+                --cobalt: #273A82;
+                --mint: #DEFFEB;
+                --basil: #1D6B4D;
+                --linen: #FAEDCB;
+                --dandelion: #FFD166;
+                --coconut: #FCD5CE;
+                --red: #EF233C;
+                --blush: #DBCDF0;
+                --indigo: #231942;
             }
 
             html, body {
@@ -49,8 +60,8 @@
                 position: relative;
                 z-index: 10;
                 height: 82px;
-                margin-top: 10px;
-                background: var(--white);
+                padding-top: 10px;
+                background: var(--linen);
             }
             .header-container {
                 width: 80%;
@@ -110,12 +121,12 @@
             .hero {
                 position: relative;
                 z-index: 10;
-                height: calc(80vh - 92px);
-                width: 80%;
-                max-width: 1170px;
+                height: 100%;
+                min-height: calc(100vh - 92px);
+                width: 100%;
                 margin-right: auto;
                 margin-left: auto;
-                background: var(--white);
+                background: var(--linen);
                 display: block;
                 padding-top: 40px;
             }
@@ -123,32 +134,36 @@
                 float: right;
                 overflow: hidden;
                 border-radius: 100px;
-                height: 500px;
-                width: 60%;
+                height:500px;
+                width: 40%;
                 display: block;
+                padding-right: 10%;
+                padding-top: 50px;
+                padding-bottom: 50px;
             }
             .hero-img img {
-                height: 500px;
+                height: 450px;
             }
             .hero-txt {
                 position: absolute;
-                width: 50%;
+                width: 40%;
                 height: 500px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: start;
+                padding-left: 10%;
             }
             .txt-line-bold {
-                font-family: 'Poppins', sans-serif;
-                font-size: 38px;
-                font-weight: 700;
+                font-family: 'DM Serif Display', serif;
+                font-size: 54px;
+                font-weight: 500;
                 color: var(--black);
                 line-height: 50px;
             }
             .txt-line-normal {
-                font-family: 'Poppins', sans-serif;
-                font-size: 36px;
+                font-family: 'DM Serif Display', serif;
+                font-size: 38px;
                 font-weight: 400;
                 color: var(--black);
                 line-height: 50px;
@@ -170,14 +185,14 @@
                 top: -500px;
                 left: 50px;
                 display: block;
-                transform: rotate(30deg);
+                /* transform: rotate(30deg); */
             }
             .hero-phone-img-2 {
                 position: relative;
                 top: -1000px;
                 left: 55%;
                 display: block;
-                transform: rotate(30deg);
+                /* transform: rotate(30deg); */
             }
 
 
@@ -188,64 +203,69 @@
             }
 
             .features {
-                width: 80%;
-                max-width: 1170px;
+                height: 100%;
+                min-height: calc(100vh - 92px);
+                width: 100%;
+                /* max-width: 1170px; */
                 min-height: 50px;
                 margin-right: auto;
                 margin-left: auto;
-                padding: 100px;
+                /* padding: 100px; */
                 padding-top: 150px;
                 padding-bottom: 150px;
                 display: flex;
                 justify-content: space-between;
+                background-color: var(--white);
             }
             .features-copy {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-evenly;
                 align-items: center;
+                width: 40%;
+                margin-right: 10%;
             }
             .features-copy-cell {
                 height: auto;
                 width: 250px;
-                background-color: var(--white);
+                /* background-color: var(--white); */
                 padding-bottom: 20px;
                 padding-left: 20px;
                 cursor: pointer;
             }
             .features-copy-cell:hover > .features-copy-cell-title {
-                text-decoration: underline dotted var(--strawberry);
+                text-decoration: underline dotted var(--black);
             }
             .features-copy-cell-icon {
-                height: 30px;
-                width: 30px;
-                padding: 10px;
+                height: 20px;
+                width: 20px;
+                padding: 15px;
                 margin-right: 10px;
                 background-color: var(--powder);
                 border-radius: 10px;
                 float: left;
             }
             .sharing-icon {
-                width: 40px !important;
+                width: 25px !important;
             }
             .sharing-icon img {
-                width: 40px !important;
+                width: 25px !important;
             }
             .reminders-icon {
-                width: 28px !important;
+                width: 18px !important;
             }
             .reminders-icon img {
-                width: 28px !important;
+                width: 18px !important;
             }
             .features-copy-cell-icon img {
-                height: 30px;
-                width: 30px;
+                height: 20px;
+                width: 20px;
             }
             .features-copy-cell-title {
-                font-family: 'Poppins', sans-serif;
-                font-size: 22px;
-                font-weight: 700;
-                color: var(--black);
+                font-family: 'DM Serif Display', serif;
+                font-size: 30px;
+                font-weight: 500;
+                color: var(--strawberry);
                 text-decoration: none;
                 padding-top: 10px;
                 float: left;
@@ -261,13 +281,16 @@
             }
             .features-img {
                 height: 540px;
-                width: 80%;
+                width: 40%;
                 overflow: hidden;
                 display: block;
                 border-radius: 100px;
+                padding-top: 50px;
+                padding-bottom: 50px;
+                margin-left: 10%;
             }
             .features-img img {
-                height: 540px;
+                height: 490px;
             }
             .phone-img {
                 position: relative;
@@ -282,19 +305,21 @@
 
 
             .contact {
-                width: 80%;
-                max-width: 1170px;
+                width: 100%;
+                /* max-width: 1170px; */
                 min-height: 50px;
                 margin-right: auto;
                 margin-left: auto;
-                margin-bottom: 100px;
+                /* margin-bottom: 100px; */
                 text-align: center;
+                padding-top: 220px;
+                background-color: var(--frost);
             }
             .contact-copy-title {
                 font-family: 'DM Serif Display', serif;
                 font-size: 40px;
                 font-weight: 500;
-                color: var(--black);
+                color: var(--cobalt);
             }
             .contact-copy-txt {
                 font-family: 'Poppins', sans-serif;
@@ -324,15 +349,18 @@
 
 
             .blurb {
-                width: 80%;
-                max-width: 1170px;
+                width: 100%;
+                /* max-width: 1170px; */
                 min-height: 50px;
-                margin-right: auto;
-                margin-left: auto;
-                margin-top: 100px;
-                margin-bottom: 150px;
+                /* margin-right: auto;
+                margin-left: auto; */
+                /* margin-top: 100px;
+                margin-bottom: 150px; */
+                padding-top: 100px;
+                padding-bottom: 220px;
                 display: flex;
                 justify-content: center;
+                background-color: var(--frost);
             }
             .blurb-1,
             .blurb-2,
@@ -341,9 +369,9 @@
                 height: 52px;
                 line-height: 52px;
                 padding-right: 5px;
-                font-family: 'Poppins', sans-serif;
-                font-size: 26px;
-                font-weight: 400;
+                font-family: 'DM Serif Display', serif;
+                font-size: 30px;
+                font-weight: 500;
                 color: var(--black);
                 line-height: 50px;
             }
@@ -355,10 +383,11 @@
             footer {
                 position: relative;
                 width: 100%;
-                bottom: 10px;
+                /* bottom: 10px; */
                 font-size: 10px;
                 color: var(--powder);
                 text-align: center;
+                background-color: var(--frost);
             }
 
             /* transition animations */
@@ -381,7 +410,7 @@
             }
 
             .slide-up {
-                top: -450px;
+                top: 0px;
                 animation-name: slideUpAnimation;
                 animation-iteration-count: 1;
                 animation-timing-function: ease-out;
@@ -390,15 +419,15 @@
 
             @keyframes slideUpAnimation {
                 0% {
-                    top: -420px;
+                    top: -20px;
                 }
                 100% {
-                    top: -450px;
+                    top: 0px;
                 }
             }
 
             .hero-slide-up {
-                top: -500px;
+                top: 0px;
                 animation-name: heroSlideUpAnimation;
                 animation-iteration-count: 1;
                 animation-timing-function: ease-out;
@@ -407,15 +436,15 @@
 
             @keyframes heroSlideUpAnimation {
                 0% {
-                    top: -450px;
+                    top: -50px;
                 }
                 100% {
-                    top: -500px;
+                    top: 0px;
                 }
             }
 
             .hero-slide-down {
-                top: -1000px;
+                top: -500px;
                 animation-name: heroSlideDownAnimation;
                 animation-iteration-count: 1;
                 animation-timing-function: ease-out;
@@ -424,10 +453,10 @@
 
             @keyframes heroSlideDownAnimation {
                 0% {
-                    top: -1050px;
+                    top: -450px;
                 }
                 100% {
-                    top: -1000px;
+                    top: -500px;
                 }
             }
 
@@ -454,6 +483,10 @@
                 }
                 .features-img {
                     display: none;
+                }
+                .features-copy {
+                    margin-right: auto;
+                    margin-left: auto;
                 }
                 .features-copy-cell {
                     padding-left: 0px;
@@ -594,7 +627,7 @@
                     </div>
                 </div>
                 <div class="hero-img">
-                    <img src="bg.png">
+                    <!-- <img src="bg.png"> -->
                     <img src="projects1.png" class="hero-phone-img-1 hero-slide-up">
                     <img src="tasks2.png" class="hero-phone-img-2 hero-slide-down">
                 </div>
@@ -604,7 +637,7 @@
             <a name="features" class="anchor">
                 <div class="features fade-in">
                     <div class="features-img">
-                        <img src="bg.png">
+                        <!-- <img src="bg.png"> -->
                         <img src="projects1.png" class="phone-img slide-up">
                     </div>
                     <div class="features-copy">
@@ -651,7 +684,7 @@
             <div class="blurb fade-in">
                 <div class="blurb-1">Maybe we can help you </div>
                 <div class="blurb-2">Do It.</div>
-                <div class="blurb-3">🥳</div>
+                <div class="blurb-3">🍃☕</div>
             </div>
 
         </div><!-- /container -->
@@ -669,7 +702,7 @@
                 $( ".sync-and-sharing > .features-copy-cell-icon" ).css("background-color", "var(--powder)");
                 $( ".attachments-and-reminders > .features-copy-cell-icon" ).css("background-color", "var(--powder)");
 
-                $( icon + " > .features-copy-cell-icon" ).css("background-color", "var(--strawberry)");
+                $( icon + " > .features-copy-cell-icon" ).css("background-color", "var(--powder)");
             }
 
             $( ".projects-and-lists" ).click(function() {
