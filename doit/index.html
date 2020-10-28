@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Do It: To-do, Doing, Done</title>
+        <title>Do It: To-Do List & Tasks</title>
         <meta name="description" content="Do you have a project? Do you have things that you want to get done? Are you looking for a simple way to keep track of all the things you need to do? Maybe we can help you Do It.">
-        <meta name="keywords" content="App,Todo,List,To-do,Plan,Planner,Track,Tracker,Task,Work,Agile,Project,Mobile,Desktop,Developer">
+        <meta name="keywords" content="motivation,planner,to do list,to-do,tracker,productivity,any do,2do,do it,doing,doing it,ivy,agile,check list, task list">
         <meta name="author" content="Sebastian Connan">
         <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display,Poppins:wght@400,700&display=swap" rel="stylesheet">
     </head>
@@ -133,7 +133,6 @@
             .hero-img {
                 float: right;
                 overflow: hidden;
-                border-radius: 100px;
                 height:500px;
                 width: 40%;
                 display: block;
@@ -207,8 +206,8 @@
                 min-height: 50px;
                 margin-right: auto;
                 margin-left: auto;
-                padding-top: 150px;
-                padding-bottom: 150px;
+                padding-top: 100px;
+                padding-bottom: 100px;
                 display: flex;
                 justify-content: space-between;
                 background-color: var(--white);
@@ -279,7 +278,6 @@
                 width: 40%;
                 overflow: hidden;
                 display: block;
-                border-radius: 100px;
                 padding-top: 50px;
                 padding-bottom: 50px;
                 margin-left: 10%;
@@ -453,15 +451,38 @@
                 .link-container {
                     display: none;
                 }
+                .hero {
+                    height: 200%;
+                    min-height: calc(200vh - 92px);
+                    padding-bottom: 100px;
+                }
                 .hero-txt {
                     width: 100%;
+                    z-index: 100;
+                }
+                .hero-txt > div {
+                    background-color: var(--linen);
                 }
                 .hero-img {
-                    width: 90%;
+                    top: calc(100vh - 92px);
+                    position: relative;
+                    width: 100%;
+                    padding-right: 0%;
+                    float: unset;
                 }
-                .hero-phone-img-1,
                 .hero-phone-img-2 {
-                    display: none;
+                    left: 30%;
+                }
+                .hero-slide-down {
+                    top: -350px;
+                }
+                @keyframes heroSlideDownAnimation {
+                    0% {
+                        top: -450px;
+                    }
+                    100% {
+                        top: -350px;
+                    }
                 }
                 .features {
                     padding: 0px;
